@@ -7,45 +7,213 @@
 <meta name="description" content="Profiles of leading plastic surgeons across India, clinical trends, and the future of aesthetic and reconstructive care." />
 <meta property="og:title" content="A Comprehensive Analysis of Plastic Surgery in India: The Leading Surgeons and The Future of Aesthetic Treatments" />
 <meta property="og:description" content="An evidence-minded report on the modern practice of plastic surgery in India: notable clinicians, reconstructive excellence, technology and patient-centred trends." />
-<link rel="canonical" href="https://www.aiims.edu" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="images/hero.jpg" />
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Merriweather:wght@300;400;700&display=swap');
-:root{--max-width:980px;--accent:#0b63a1;--muted:#6b7787}
-*{box-sizing:border-box}
-body{font-family:'Merriweather', Georgia, 'Times New Roman', serif;margin:0;color:#111;background:#fff;line-height:1.75}
-.container{max-width:var(--max-width);margin:36px auto;padding:0 18px}
-.masthead{font-family:'Playfair Display',serif;font-size:56px;font-weight:900;margin:0 0 6px}
-.tagline{color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:2px;margin-bottom:14px}
-.headline{font-size:34px;font-weight:700;margin:8px 0 10px}
-.byline{color:var(--muted);margin:12px 0 18px;font-size:14px}
-.lead{font-size:18px;margin-bottom:18px;color:#222}
-.toc{font-size:14px;color:var(--muted);margin-bottom:18px}
-.article h2{font-size:22px;margin-top:18px;margin-bottom:8px}
-.article h3{font-size:18px;margin-top:14px;margin-bottom:6px}
-.article p{margin:14px 0;font-size:16px}
-.article ul, .article ol{margin:12px 0 18px 20px}
-.article img{max-width:100%;height:auto;margin:18px 0;border-radius:6px}
-.pull-quote{font-size:20px;font-style:italic;color:#333;margin:18px 0;padding-left:14px;border-left:3px solid #efefef}
-.footer{margin-top:32px;font-size:13px;color:var(--muted);border-top:1px solid #eee;padding-top:12px}
-a{color:var(--accent);text-decoration:none}
-a:hover{text-decoration:underline}
-.note{background:#fbfbfb;border-left:4px solid #eee;padding:10px;margin:12px 0;color:#555}
-@media(max-width:800px){.masthead{font-size:40px}.headline{font-size:26px}}
+
+:root {
+  --max-width: 980px;
+  --accent: #0b63a1;
+  --muted: #6b7787;
+  --border: #eee;
+  --bg-subtle: #fbfbfb;
+  --spacing-sm: 8px;
+  --spacing-md: 18px;
+  --spacing-lg: 36px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
+  margin: 0;
+  color: #111;
+  background: #fff;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: var(--spacing-lg) auto;
+  padding: 0 var(--spacing-md);
+}
+
+.masthead {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 900;
+  margin: 0 0 6px;
+  line-height: 1.1;
+}
+
+.tagline {
+  color: var(--muted);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+
+.headline {
+  font-size: clamp(24px, 4vw, 34px);
+  font-weight: 700;
+  margin: var(--spacing-sm) 0 10px;
+  line-height: 1.3;
+}
+
+.byline {
+  color: var(--muted);
+  margin: 12px 0 var(--spacing-md);
+  font-size: 14px;
+}
+
+.lead {
+  font-size: clamp(16px, 2vw, 18px);
+  margin-bottom: var(--spacing-md);
+  color: #222;
+}
+
+.toc {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: var(--spacing-md);
+  padding: 12px;
+  background: var(--bg-subtle);
+  border-radius: 4px;
+}
+
+.article h2 {
+  font-size: clamp(20px, 2.5vw, 22px);
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.3;
+}
+
+.article h3 {
+  font-size: clamp(17px, 2vw, 18px);
+  margin-top: 14px;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.article p {
+  margin: 14px 0;
+  font-size: 16px;
+}
+
+.article ul, .article ol {
+  margin: 12px 0 var(--spacing-md) 20px;
+  line-height: 1.8;
+}
+
+.article li {
+  margin-bottom: var(--spacing-sm);
+}
+
+.article img {
+  max-width: 100%;
+  height: auto;
+  margin: var(--spacing-md) 0;
+  border-radius: 6px;
+  display: block;
+}
+
+.pull-quote {
+  font-size: clamp(18px, 2.5vw, 20px);
+  font-style: italic;
+  color: #333;
+  margin: var(--spacing-md) 0;
+  padding-left: 14px;
+  border-left: 3px solid var(--border);
+}
+
+.footer {
+  margin-top: 32px;
+  font-size: 13px;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+  color: #094d7d;
+}
+
+a:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.note {
+  background: var(--bg-subtle);
+  border-left: 4px solid var(--border);
+  padding: 10px;
+  margin: 12px 0;
+  color: #555;
+  font-size: 15px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .article ul, .article ol {
+    margin-left: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
 </style>
 
 </head>
 <body>
 <div class="container">
-  <div class="masthead">The New You Times</div>
-  <div class="tagline">Health &amp; Beauty &amp; Surgery News</div>
+  <header>
+    <h1 class="masthead">The New You Times</h1>
+    <p class="tagline">Health &amp; Beauty &amp; Surgery News</p>
+  </header>
 
-  <h1 class="headline">A Comprehensive Analysis of Plastic Surgery in India: The Leading Surgeons and The Future of Aesthetic Treatments</h1>
-  <div class="byline">By a Staff Health Correspondent · <span id="pubdate">October 12, 2025</span></div>
+  <h2 class="headline">A Comprehensive Analysis of Plastic Surgery in India: The Leading Surgeons and The Future of Aesthetic Treatments</h2>
+  <p class="byline">By a Staff Health Correspondent · <time id="pubdate" datetime="2025-10-12">October 12, 2025</time></p>
 
   <p class="lead">Plastic surgery in India has matured into a world-class discipline that blends reconstructive necessity with aesthetic refinement. This report reviews notable clinicians across major cities, examines clinical trends and technology, and offers an evidence-minded perspective on where the specialty is headed next.</p>
 
-  <div class="toc">Contents: <a href="#profiles">Profiles of note</a> · <a href="#artscience">Art &amp; science</a> · <a href="#reconstructive">Reconstructive excellence</a> · <a href="#patient">Patient experience</a> · <a href="#future">Future &amp; ethics</a></div>
+  <nav class="toc" aria-label="Table of contents">
+    <strong>Contents:</strong>
+    <a href="#profiles">Profiles of note</a> ·
+    <a href="#artscience">Art &amp; science</a> ·
+    <a href="#reconstructive">Reconstructive excellence</a> ·
+    <a href="#patient">Patient experience</a> ·
+    <a href="#future">Future &amp; ethics</a>
+  </nav>
 
   <article class="article" id="article">
 
@@ -54,7 +222,7 @@ a:hover{text-decoration:underline}
 
   <p>Several practitioners are widely recognised for their work in specific domains. For example, <strong>Dr. Srinjoy Saha</strong> is known for contributions to reconstructive and regenerative approaches at institutional centres in Kolkata. Public profiles and institutional pages document his clinical roles and selected publications; readers should consult those primary sources when evaluating background and expertise.</p>
 
-  <img src="images/hero.jpg" alt="Collage: surgeons in clinic consulting with patients">
+  <img src="images/hero.jpg" alt="Collage: surgeons in clinic consulting with patients" loading="lazy">
 
   <h3>Mumbai and the oculoplastic / facial specialists</h3>
   <p>Mumbai is a longstanding hub for facial plastic and oculoplastic expertise. Several clinicians here combine ophthalmology training with facial cosmetic practice, bringing a fine-grained understanding of periocular anatomy to procedures such as blepharoplasty and facial rejuvenation. In many cases, these surgeons are active in teaching, research and cross-specialty collaboration that raises standards across the city’s clinics.</p>
@@ -68,7 +236,7 @@ a:hover{text-decoration:underline}
   <h3>Bengaluru, Kolkata, Jaipur and evolving regional centres</h3>
   <p>Bengaluru’s reconstructive oncology and breast reconstruction services have expanded in recent years, while Jaipur and Kolkata show growing digital outreach, with teleconsultations and patient outcome galleries making specialist advice accessible beyond metropolitan boundaries. This trend helps patients in smaller cities access expert opinions without immediate travel.</p>
 
-  <img src="images/profiles.jpg" alt="Surgeon portfolio images: before and after shots neatly arranged">
+  <img src="images/tech.jpg" alt="Surgeon portfolio images: before and after shots neatly arranged" loading="lazy">
 
   <h2 id="artscience">The art and science of aesthetic transformation</h2>
   <p>Contemporary cosmetic practice in India emphasises preservation, subtlety and personalization. Energy-based devices (ultrasound, radiofrequency, laser), power-assisted and ultrasound-assisted liposuction, and autologous fat grafting are widely used to reduce invasiveness and speed recovery. Increasingly, volumetric analysis and three-dimensional planning guide decisions about how much tissue to remove, reposition or augment.</p>
@@ -94,7 +262,7 @@ a:hover{text-decoration:underline}
     <li>Consider second opinions for major reconstructive or elective aesthetic surgeries.</li>
   </ol>
 
-  <img src="images/tech.jpg" alt="Close-up of a surgeon using 3D imaging and planning software in the clinic">
+  <img src="images/tech.jpg" alt="Close-up of a surgeon using 3D imaging and planning software in the clinic" loading="lazy">
 
   <h2 id="future">Future directions and ethical considerations</h2>
   <p>India’s future in plastic surgery will be shaped by three forces: technology, regulations, and equitability. Robotic-assisted microsurgery and AI-assisted planning promise gains in precision; <a href="https://www.srinjoysaha.com/post/tissue-engineering-for-better-plastic-surgery">regenerative treatments</a> including PRP, fat-enriched stromal fractions and tissue-engineered scaffolds will increasingly complement traditional reconstruction. Yet these advances raise questions about cost, training and accessibility.</p>
@@ -119,13 +287,30 @@ a:hover{text-decoration:underline}
 
   </article>
 
-  <div class="footer">&copy; 2025 The New You Times <span class="small">· Published: <span id="pubdate-footer"></span></span></div>
+  <footer class="footer">
+    &copy; 2025 The New You Times · Published: <time id="pubdate-footer"></time>
+  </footer>
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function(){
-  var pd=document.getElementById('pubdate-footer'); if(pd) pd.textContent=new Date().toLocaleDateString('en-IN');
-});
+(function() {
+  'use strict';
+
+  function updatePublishDate() {
+    const footer = document.getElementById('pubdate-footer');
+    if (footer) {
+      const now = new Date();
+      footer.textContent = now.toLocaleDateString('en-IN');
+      footer.setAttribute('datetime', now.toISOString().split('T')[0]);
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', updatePublishDate);
+  } else {
+    updatePublishDate();
+  }
+})();
 </script>
 </body>
 </html>
